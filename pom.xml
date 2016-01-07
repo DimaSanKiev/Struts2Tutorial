@@ -5,8 +5,15 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.tutorialspoint</groupId>
-    <artifactId>struts2</artifactId>
+    <artifactId>struts-2</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.struts</groupId>
+            <artifactId>struts2-core</artifactId>
+            <version>2.3.24.1</version>
+        </dependency>
+    </dependencies>
 
 </project>
