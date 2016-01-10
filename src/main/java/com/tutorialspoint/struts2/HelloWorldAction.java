@@ -1,6 +1,8 @@
 package com.tutorialspoint.struts2;
 
-public class HelloWorldAction {
+import com.opensymphony.xwork2.ActionSupport;
+
+public class HelloWorldAction extends ActionSupport {
     private String name;
 
     public String getName() {
@@ -12,6 +14,10 @@ public class HelloWorldAction {
     }
 
     public String execute() throws Exception {
-        return "success";
+        if("SECRET".equals(name)) {
+            return SUCCESS;
+        } else {
+            return ERROR;
+        }
     }
 }
